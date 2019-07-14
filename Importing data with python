@@ -1,0 +1,57 @@
+As PEP 20 says, "Readability counts".
+
+
+Importing data in Python
+
+filename = 'xyz.txt' ## text file 
+file = open(filename, mode ='r') ## r is to read , w is to write data
+text = file.read() ## will read the file 
+file.close() ## will close the connection to the file
+print(text) ##will print the file
+
+
+>>> with context??
+
+
+
+open a file
+file = open('moby_dick.txt', mode = 'r') ##opens the file and put it into variable = file
+print(file.read()) ## will print the contents of the file
+print(file.closed) ## checks whether the file is closed.
+file.close() ##closes the file
+
+##reading line one by one from a text file in python-
+function used -readline() 
+everytime the function readline() is executed it reads one line from the text-
+
+	with open('moby_dick.txt') as file:
+		print(file.readline()) ## reads and prints the first line of the text file
+		print(file.readline()) ## reads and prints the second line of the text file
+		print(file.readline()) ## reads and prints the next line of the text file
+
+Here with is a context manager which manages to open the text file with the variable name file
+
+
+>>>Flat files- Flat files are basic text files containing records that is table data without structured relationships.
+Record- row of fields or attributes
+column - feature or attribute 
+first row is the header in  flat file
+example- csv file, .txt - text file, commas or tabs- called as delimiters
+
+## How to decided numpy or pandas-
+	if the file consists of numbers then we could use numpy array
+	or instead we wanna store the data in a dataframe we wanna use in pandas-
+
+
+BDFL- Benevolent dictator For Life - (benevolent meaning- well meaning and kindly,, serving a charitable rather than a profit making purpose)
+
+https://docs.python.org/3.3/glossary.html#term-bdfl
+
+pep20-https://www.python.org/dev/peps/pep-0020/
+advices from datacamp-https://instructor-support.datacamp.com/en/#tab_style_guide_python
+pep8 rules for writing a beautiful code-https://www.python.org/dev/peps/pep-0008/#introduction
+
+https://www.kaggle.com/ronitf/churn-prediction-telecom
+https://www.kaggle.com/anshulbakode/telecom-churn/edit
+
+motivational speech -http://neopythonic.blogspot.com/2016/04/kings-day-speech.html
