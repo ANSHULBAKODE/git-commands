@@ -1,0 +1,62 @@
+GIT AND GITHUB TUTORIAL-
+
+What is GIT(VCS- Version Control System)
+	Distributed Version Control 
+	Coordinates work between multiple developers
+	Who made what changes and when
+	Revert back at any time
+	Local and remote repos
+	
+-- Stores files.
+
+	keeps track of code history
+	takes snapshots of your files
+	you decide when to take a snapshot by making a commit
+	you can visit any snapshot at any time
+	you can stage files before committing
+	
+--Basic Commands
+	$git init ## initialize Local Git repository
+	$git add<file> ## Add files to index
+	$git status ## check status of working tree
+	$git commit ## commit changes in index
+	
+	--Remote repository commands
+	(git hub or bitbucket)
+	$git push - Pus the local repository to remote repository
+	 have to add creds pwds or SSH keys 
+	 
+	 $git pull-if you want to pull the latest changes from remote repository 
+	 if someone made the latest changes so you can use pull
+	 
+	 $git clone - will copy the remote repo to your local folder
+	 
+--Installing GIT
+	Linux(Debian) - $ sudo apt-get install git
+	linux(Fedora) - $ sudo yum install git
+	Mac - http://git-scm.com/download/mac
+	windows- http://git-scm.com/download/win
+	
+
+after installing git. gitbash window will open up. 
+	gitbash first commands-  git --version 
+	to check the version of the git
+
+__ creating files from GIT
+touch index.html ## will create a hmtl file names index in the folder
+touch app.js ## will create a js file in the folder named app
+
+before you start to work with git you want to enter your name and email address to git-
+git config --global user.name 'Anshul Bakode'
+git config --global user.email 'anshulbakode@gmail.com'
+
+git add index.html ## to add index.html to git	
+git rm --cached index.html ## to remove file from git staging area
+
+git add *.html ## will add any html file present in the folder
+
+to add every file in the git 
+git add .
+
+
+	
