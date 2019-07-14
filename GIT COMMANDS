@@ -58,5 +58,3 @@ git add *.html ## will add any html file present in the folder
 to add every file in the git 
 git add .
 
-
-	
