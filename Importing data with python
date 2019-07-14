@@ -1,8 +1,23 @@
 import numpy as np
 filename = 'xyz.txt'
-data = np.loadtxt(filenmane, delimiter = ',',
-skiprows = 1)
+data = np.loadtxt(filenname, delimiter = ',',
+skiprows = 1, usecols=[0,2], dtype=str)
+
+tab delimiter = delimiter='\t'
+
 
 skiprows to skip the first row which contains the header of the file to 
 specify the columns
 
+usecols is used to define the columns which you want to use in the dataset.
+
+dtype - to define that all the data is imported as strings
+
+## handling different type of data type in a dataset with numpy.
+  np.genfromtxt()
+  to check the shape of the array in numpy-
+    np.shape(filename)
+    
+You have just used np.genfromtxt() to import data containing mixed datatypes.
+There is also another function np.recfromcsv() that behaves similarly to np.genfromtxt(),
+except that its default dtype is None. 
