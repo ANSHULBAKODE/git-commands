@@ -1,1 +1,17 @@
-
+Manipulating pandas DataFrames
+  -Exploratory Data Analysis  
+  -Data Wrangling
+  -Data Preprocessing
+  -Building Models
+  -Visualization
+  
+ #### Important thing to note that numpy doesn't support dataframes concept it is the pandas which is used to 
+ import dataset as dataframe rather than importing dataset as an array in numpy
+ 
+ 
+ import pandas as pd
+ filename = 'titanic.csv'
+ data = pd.read_csv(filename)
+ data.head()
+ data_array = data.values ##converts pandas dataframe to numpy array
+ 
